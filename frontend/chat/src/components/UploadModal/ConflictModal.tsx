@@ -27,13 +27,13 @@ export default function ConflictModal({
 
   return (
     <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/40">
-      <div className="bg-white rounded-lg shadow p-6 w-full max-w-3xl">
-        <h3 className="text-lg font-semibold mb-4 text-red-600">
+      <div className="bg-gray-800 rounded-lg shadow p-6 w-full max-w-3xl">
+        <h3 className="text-lg font-semibold mb-4 text-red-500">
           Similar Policy Found
         </h3>
 
         <div className="mb-4">
-          <p className="text-gray-700 font-medium mb-2">Existing Document:</p>
+          <p className="text-gray-500 font-medium mb-2">Existing Document:</p>
 
           <div className="border rounded-lg overflow-hidden h-[300px] shadow">
             <iframe
@@ -51,7 +51,7 @@ export default function ConflictModal({
         <div className="flex items-center gap-3 mt-6">
           {/* Replace Existing */}
           <button
-            className="px-4 py-2 bg-red-600 text-white rounded flex items-center gap-2"
+            className="px-4 py-2 bg-red-500 text-white rounded flex items-center gap-2"
             onClick={replaceExisting}
             disabled={loading}
           >
@@ -61,7 +61,7 @@ export default function ConflictModal({
 
           {/* Upload as New */}
           <button
-            className="px-4 py-2 bg-blue-600 text-white rounded flex items-center gap-2"
+            className="px-4 py-2 bg-blue-500 text-white rounded flex items-center gap-2"
             onClick={uploadSeparate}
             disabled={loading}
           >
@@ -71,7 +71,7 @@ export default function ConflictModal({
 
           {/* Cancel */}
           <button
-            className="ml-auto px-4 py-2 border rounded flex items-center gap-2"
+            className="ml-auto px-4 bg-gray-900 text-white py-2 border  rounded flex items-center gap-2"
             onClick={onClose}
             disabled={loading}
           >

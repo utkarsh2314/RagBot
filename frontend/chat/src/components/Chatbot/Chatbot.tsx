@@ -84,7 +84,6 @@ export default function Chatbot() {
                        resize-none overflow-hidden leading-5 focus:outline-none focus:border-indigo-500"
             placeholder="Ask something about company policies..."
             value={input}
-            rows={1}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={onKeyDown}
             disabled={loading}
