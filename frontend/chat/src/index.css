@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+:root{
+--argPurple: #6f2bdc;
+}
+
+
+/* small helper colors */
+.bg-argPurple{ background-color: var(--argPurple); }
+.text-argPurple{ color: var(--argPurple); }
+
+
+/* small layout niceties */
+.prose img{ max-width:100%; }
